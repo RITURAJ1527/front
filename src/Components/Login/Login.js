@@ -142,7 +142,6 @@ class Login extends Component {
                                 <span onClick={this.toggleShow} onMouseEnter={this.toggleShow} onMouseLeave={this.toggleShow} style={{ cursor: "pointer" }}><i
                                     className="fas fa-eye" /></span>
                             </div>
-                            <a href="#">Forgot your password?</a>
                             <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
                         </form>
                     </div>
