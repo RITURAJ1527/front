@@ -3,7 +3,7 @@ import axios from 'axios';
 class StudentService {
 	constructor() {
 		//this.api_url = 'https://herd-class-api.herokuapp.com/api/';
-		this.api_url = 'http://localhost:9000/api/'
+		this.api_url = 'https://herd-backend.herokuapp.com/api/'
 	}
 
 	getStudentClass = (id) => {
