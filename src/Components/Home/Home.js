@@ -142,7 +142,7 @@ class Home extends Component {
             <div className="row">
               {
                 selectedClasses && selectedClasses.length > 0 && selectedClasses.map(item => (
-                  <div className="col-sm-3" onClick={() => this.getClassDetailsById(item)} style={{ cursor: 'pointer' }} key={item._id}>
+                  <div className="col-sm-3" onClick={() => this.getClassDetailsById(item)} style={{ cursor: 'pointer', marginBottom: '10px' }} key={item._id}>
                     <div style={{ backgroundColor: "#ffc107", padding: '10px' }}>
                       <h6 className="text-center">{item.name}</h6>
                     </div>
@@ -162,7 +162,7 @@ class Home extends Component {
               <React.Fragment>
                 <h5 className="text-center">{selectedClass.name}</h5>
                 <h6 className="text-center">
-                  <button type="button" onClick={() => this.deleteClass(selectedClass)}>Unsubscribed this class</button>
+                  <button type="button" onClick={() => this.deleteClass(selectedClass)}>Unsubscribe this class</button>
                 </h6>
                 <hr />
                 <h6 className="text-center">List of subscribed student for this class</h6>
